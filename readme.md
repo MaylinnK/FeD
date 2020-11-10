@@ -73,12 +73,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** Responsive
 
-**Je opdracht:** https://oege.ie.hva.nl/~kwakmam5/Maylinn.Kwakman.Grafiet.Projectpassie/
+**Je opdracht:** https://www.large.nl/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/Home.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/Home.GIF" width="375px" alt="omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/Contact.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/Backstage.GIF" width="375px" alt="omschrijving van de pagina">
