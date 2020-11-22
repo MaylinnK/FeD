@@ -39,7 +39,7 @@ figure.header>figcaption {
   width: 170px
 }
 
-header>div>span>a>img {
+header>div>span.logo>a>img {
   height: 75px;
   margin-right: 150px;
   margin-top: 10px;
@@ -61,7 +61,7 @@ button {
   padding: 0px;
 }
 
-input[type=search] {
+div.header input[type=search] {
   width: 400px;
   padding: 10px;
 }
@@ -69,7 +69,7 @@ input[type=search] {
 a.icon>img {
   width: 30px;
   height: 30px;
-  margin: 0px;
+  /* margin: 0px; */
   margin-left: 40px;
 }
 
@@ -79,41 +79,92 @@ span.icon {
 }
 
 div.header {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
-  flex-grow: 1;
-  max-width: 100%;
+  flex-wrap: wrap;
+  min-width: 0px;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   list-style-type: none;
   background-color: #B5191E;
   padding: 10px;
   margin-bottom: 0px;
 }
 
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  padding-left: 25px;
-  padding-right: 25px;
+nav li {
+  display: flex;
+  flex-grow: 1;
 }
 
-@media screen and (max-width: 1280px) {
+nav a {
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  figure.header{
+    display: none;
+  }
+
   nav {
-    background-color: #2B2B2B;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #2B2B2B; */
     width: 300px;
   }
 
   nav ul {
-    display: flex;
+    display: none;
     flex-direction: column;
+    background-color: #B41C20;
+    width: 300px;
+    /* visibility: hidden; */
   }
+
+  div.header span.logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  header>div>span.logo>a>img {
+    height: 40px;
+    margin-right: 0px;
+  }
+
+  div.header input[type=search] {
+    width: 400px;
+    flex-grow: 1;
+  }
+
+  div.header form {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    border-style: solid;
+    border-color: #B41C20;
+    border-width: 6px;
+    flex-grow: 1;
+    background-color: white;
+  }
+
+  div.header {
+    display: block;
+    justify-content: center;
+  }
+
+  span.icon {
+    display: none;
+  }
+
 }
 
 /* -------------------Body------------------- */
@@ -142,15 +193,20 @@ article.banner>p>a {
 section.slider {
   display: flex;
   justify-content: center;
-  height: 620px;
+  max-width: 100%;
+  height: auto;
+  /* padding: 100px; */
 }
 
 section.slider figure {
-  /* display: none; */
+  position: relative;
+  max-width: 100%;
+  min-width: 10%;
 }
 
 section.slider>figure>img {
-  min-width: 400px;
+  max-width: 100%;
+  height: auto;
 }
 
 section.slider>figure>article {
@@ -160,6 +216,7 @@ section.slider>figure>article {
   left: 100px;
   padding: 20px;
   width: 300px;
+  max-width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -173,27 +230,23 @@ section.slider figure a {
   font-size: 30px;
   color: black;
 }
-section.slider form {
+
+section.slider figure button {
   position: absolute;
-    margin-top: 290px;
+  right: 0px;
+  left: 0px;
+  top: 35%;
+  bottom: 0px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-section.slider form button {
-  /* padding: 30px; */
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
-  background-color: white;
-  opacity: 70%;
-  font-size: 40px;
-  height: 100px;
-  width: 50px;
-}
-section.slider form button:nth-last-of-type(1){
-  margin-left: 1300px;
+section.slider figure button:nth-last-of-type(1) {
+  left: 100%;
 }
 
 /* -------------------Section 2------------------- */
-
 section.twee {
   display: flex;
   justify-content: center;
@@ -201,8 +254,8 @@ section.twee {
 }
 
 section.twee img {
-  width: 600px;
-  height: 550px;
+  max-width: 100%;
+  height: auto;
 }
 
 section.twee img:nth-last-of-type(1) {
@@ -210,7 +263,6 @@ section.twee img:nth-last-of-type(1) {
 }
 
 /* -------------------Section 3------------------- */
-
 section.drie {
   display: flex;
   justify-content: center;
@@ -222,7 +274,8 @@ section.drie article {
   width: 1250px;
   overflow: scroll;
 }
-section.drie article figure figcaption{
+
+section.drie article figure figcaption {
   text-align: center;
 }
 
