@@ -38,11 +38,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Goed:
+Plaatjes in de pagina zetten en met css sliders maken.
+
+Minder goed:
+Elementen positioneren op een responsive manier.
+Het menu fixed/sticky maken.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/versieeen" width = "375px" alt="Versie 1">
+In deze eerste versie missen nog een aantal dingen, zoals het hamburger menu, js slider en stukken van de footer.
 
 ### Agenda voor meeting
 
