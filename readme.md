@@ -47,8 +47,6 @@ Het menu fixed/sticky maken.
 
 **Screenshot(s):**
 
-<img src="images/versieeen.PNG" width = "375px" alt="Versie 1">
-In deze eerste versie missen nog een aantal dingen, zoals het hamburger menu, js slider en stukken van de footer.
 
 ### Agenda voor meeting
 
