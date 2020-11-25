@@ -47,18 +47,19 @@ Het menu fixed/sticky maken.
 
 **Screenshot(s):**
 
-<img src="images/versieeen" width = "375px" alt="Versie 1">
+<img src="images/versieeen.png" width = "375px" alt="Versie 1">
 In deze eerste versie missen nog een aantal dingen, zoals het hamburger menu, js slider en stukken van de footer.
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
+| ---                                                                                | ---                | ---          | ---              | ---           |
+| Hoe zorg ik er voor dat de achtergrondkleur verandert als een element in beeld is? | Ik heb een vraag over mijn header |Hoe krijg ik ruimte tussen mijn scrollbar?  | Hoe maak je een achtergrond gradient met stipjes?              | Ik heb een vraag over mijn header|
+| In hoeverre is dit de surface plane/wat moet er bij?                               | ---                |Hoe krijg ik ruimte onder mijn button?      | Hoe krijg ik mijn header fixed?                 | ---            |
+| ---                                                                                | ---                | ---          | Hoe krijg ik sommige dingen responsive  | ---           |
+
 
 ### Verslag van meeting
 
