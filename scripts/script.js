@@ -5,11 +5,16 @@
 /*eslint 'no-console': 0*/
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+var nav = document.getElementById("nav");
+
+function hamburger() {
+  console.log("Im working");
+  if (nav.style.display == "block") {
+    nav.style.display = "none";
+    console.log ("none");
   } else {
-    x.style.display = "block";
+    nav.style.display = "block";
+    console.log ("block");
   }
 }
+document.getElementById("hamburger").addEventListener("click", hamburger);

@@ -24,13 +24,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Goed, ik heb het hamburger menu in de website kunnen zetten.
 
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Minder goed, ik heb geen tijd gehad om aan de website te werken.
+
+| Samantha                                                                       | Noa                | Nicole       | Maylinn          | Stein         |
+| ---                                                                                | ---                | ---          | ---              | ---           |
+| Hoe zorg ik er voor dat mijn animatie bij 10 graden begint? | Hoe maak ik een hamburger menu? |Wat is frontend?  | Ik heb een vraag over de scaling van de tekst en de video              | Geen vraag|
+| ---                                                                                | Vraag over pijltjes bij verschillende sections               | ---          | ---              | ---           |
 
 
 

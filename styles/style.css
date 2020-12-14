@@ -19,19 +19,34 @@ figure.header {
 }
 
 nav {
-  display: none;
-  display: flex;
-  flex-direction: row;
-  width: 300px;
+  background-color: #B41C20;
+  /* display: flex; */
 }
 
 nav ul {
-  display: none;
-  flex-direction: column;
-  background-color: #B41C20;
-  width: 300px;
+  display: flex;
   list-style: none;
-  /* visibility: hidden; */
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+}
+
+nav li {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* flex-basis: auto; */
+}
+
+li.mobiel {
+  display: none
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 div.header span.logo {
@@ -42,8 +57,96 @@ div.header span.logo {
   background-color: black;
 }
 
+div.header button {
+  display: none;
+}
+
+/* ---------MOBILE--------- */
+@media screen and (max-width: 800px) {
+  nav {
+    position: fixed;
+    display: none;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    width: 80%;
+    top: 50px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* height: 100vw; */
+    display: block;
+  }
+
+  nav li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+li.mobiel{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+li.mobiel img {
+  width: 30px;
+}
+
+li.mobiel a {
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+  nav li span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-color: white;
+    transform: rotate(135deg);
+  }
+
+  div.header button {
+    display: flex;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+
+  div.header button:focus {
+    border: none;
+    outline: none;
+    background-color: #14485C;
+  }
+
+  span.bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span.bars {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+  }
+
+  div.header button>span:nth-of-type(2) {
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+}
+
+/* ------------------------- */
+
 header>div>span.logo>a>img {
-  position: absolute;
+  /* position: absolute; */
   height: 40px;
 }
 
@@ -68,12 +171,10 @@ div.header {
   position: fixed;
   width: 100vw;
   top: 0px;
-  display: block;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   z-index: 1;
   height: 40px;
-  display: flex;
-  justify-content: center;
   background-color: black;
   padding: 5px;
   /* margin-top: -40px; */
@@ -87,7 +188,7 @@ span.icon {
   margin-top: 4px;
 }
 
-span.icon a img{
+span.icon a img {
   width: 30px;
   height: 30px;
   margin-right: 20px;
@@ -98,7 +199,6 @@ span.icon a {
 }
 
 /* -------------------Body------------------- */
-
 article.banner>p>img {
   width: 15px;
   height: 22px;
@@ -122,6 +222,7 @@ section.slider div img {
   max-width: 100%;
   height: auto;
 }
+
 section.slider figure {
   margin: 0;
 }
@@ -135,6 +236,7 @@ div.slider {
   width: 100vw;
   height: auto;
 }
+
 div.slider article {
   position: absolute;
   font-size: 23px;
@@ -169,7 +271,6 @@ div.slider button:nth-last-of-type(2) {
 }
 
 /* -------------------Section twee------------------- */
-
 section.twee {
   position: relative;
   display: flex;
@@ -213,7 +314,6 @@ section.twee p {
 }
 
 /* -------------------Section drie------------------- */
-
 section.drie span {
   position: relative;
   display: flex;
@@ -240,17 +340,12 @@ section.drie button {
   padding-left: 35px;
   padding-right: 35px;
   right: 120px;
-
 }
 
 /* -------------------Section vier------------------- */
-
-
-
 section.vier article {
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
   overflow: scroll;
 }
@@ -269,22 +364,22 @@ section.vier h3 {
 }
 
 /* -------------------Footer------------------- */
-
 footer {
   margin: 20px;
 }
 
-section.klantenservice article{
+section.klantenservice article {
   font-size: 15px;
   /* margin: 10px; */
 }
 
-nav.klantenservice {
+section.klantenservice {
   display: flex;
   justify-content: flex-start;
   margin-top: 30px;
 }
-nav.klantenservice a img {
+
+section.klantenservice a img {
   height: 50px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -301,11 +396,11 @@ section.klantenservice button {
   border-radius: 6px;
 }
 
-section.email article img{
+section.email article img {
   width: 30px;
   height: 15px;
   margin-top: 5px;
-  padding:10px;
+  padding: 10px;
 }
 
 section.email article {
@@ -316,8 +411,7 @@ section.email article {
 }
 
 /* ------------------------BACKSTAGE CLUB------------------------ */
-
-body.bsc section.een{
+body.bsc section.een {
   /* margin-bottom: 50px; */
   width: 100%;
   overflow: hidden;
@@ -361,7 +455,7 @@ body.bsc article.video>article p:nth-of-type(2) {
   margin-top: 0px;
 }
 
-body.bsc article.video>article p:nth-of-type(1){
+body.bsc article.video>article p:nth-of-type(1) {
   color: white;
   font-weight: bold;
   margin-left: 20px;
@@ -380,9 +474,9 @@ body.bsc article.video>article button {
   border: none;
   border-radius: 3px;
 }
-/* ------------------------SECTION 2------------------------ */
 
-body.bsc main section:nth-of-type(2){
+/* ------------------------SECTION 2------------------------ */
+body.bsc main section:nth-of-type(2) {
   position: relative;
   background-image: radial-gradient(#212121 26%, transparent 20%);
   background-color: #f29b05;
@@ -391,10 +485,10 @@ body.bsc main section:nth-of-type(2){
 }
 
 body.bsc main section:nth-of-type(2) div {
-  background-image: linear-gradient(to left,#f29b05 25%,transparent 100%);
+  background-image: linear-gradient(to left, #f29b05 25%, transparent 100%);
 }
 
-body.bsc main section:nth-of-type(2) article > article:nth-of-type(1) {
+body.bsc main section:nth-of-type(2) article>article:nth-of-type(1) {
   /* position: relative; */
   background-color: white;
   font-size: 14px;
@@ -443,6 +537,7 @@ body.bsc main section:nth-of-type(2) span {
   width: 70px;
   z-index: 1;
 }
+
 p.p {
   position: absolute;
   bottom: 0px;
