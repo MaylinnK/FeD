@@ -16,8 +16,7 @@ function myFunction() {
   var myDropdown = document.getElementById("dropdown");
   if (myDropdown.classList.contains('show')) {
     myDropdown.classList.remove('show');
-  }
-  else {
+  } else {
     myDropdown.classList.add('show');
   }
 }

@@ -17,6 +17,7 @@ body.bsc main {
   flex-direction: column;
   align-items: center;
 }
+
 /* -------------------header------------------- */
 header {
   position: relative;
@@ -45,9 +46,6 @@ nav li {
   flex-shrink: 1;
   /* flex-basis: auto; */
 }
-#dropdown {
-  display: none;
-}
 
 .dropdown {
   display: none;
@@ -72,6 +70,8 @@ div.header span.logo {
 div.header button {
   display: none;
 }
+
+
 
 /* ---------MOBILE--------- */
 @media screen and (max-width: 770px) {
@@ -150,13 +150,10 @@ div.header button {
     padding-top: 15px;
   }
 
-.dropdown {
-  display: none;
-}
 
-.show {
+
+  .show {
     display: none;
-
     /* flex-direction: column; */
   }
 
@@ -511,7 +508,8 @@ body.bsc article.video>article {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 0px;
+  top: 200px;
+  margin-left: -5%;
   /* z-index: 1; */
 }
 
@@ -809,6 +807,11 @@ body.bsc section:nth-of-type(5) div {
 }
 
 @media screen and (min-width: 770px) {
+
+  #dropdown {
+    display: none;
+  }
+
   div.header {
     position: relative;
     display: flex;
@@ -816,11 +819,11 @@ body.bsc section:nth-of-type(5) div {
   }
 
   .logo a img {
-    max-width: 50%;
+    max-width: 47%;
   }
 
   .logo {
-    margin-left: 5%
+    margin-left: 9%
   }
 
   nav {
@@ -834,11 +837,11 @@ body.bsc section:nth-of-type(5) div {
 
   nav a {
     padding: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
     /* padding-bottom: 50px; */
     flex-grow: 1;
+    /* width: 100px; */
     white-space: nowrap;
-
   }
 
   nav a:hover {
@@ -921,26 +924,26 @@ body.bsc section:nth-of-type(5) div {
     width: 500px;
   }
 
-body.bsc section:nth-of-type(3) div span {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  max-width: 100%;
-}
+  body.bsc section:nth-of-type(3) div span {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+  }
 
-  body.bsc section:nth-of-type(3) div span>img{
+  body.bsc section:nth-of-type(3) div span>img {
     width: 200px;
     height: 100px;
     /* padding: 0px; */
-
   }
+
   body.bsc section:nth-of-type(3) div {
     display: flex;
     flex-direction: column;
   }
 
   body.bsc section:nth-of-type(3) div button {
-    align-self:flex-start ;
+    align-self: flex-start;
     width: 300px;
   }
 
