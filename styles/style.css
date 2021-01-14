@@ -8,6 +8,15 @@ body {
   height: 100%;
 }
 
+.secoranje, .seczwart {
+  width: 1400px;
+}
+
+body.bsc main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* -------------------header------------------- */
 header {
   position: relative;
@@ -26,10 +35,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  height: 30px;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -39,19 +45,25 @@ nav li {
   flex-shrink: 1;
   /* flex-basis: auto; */
 }
+#dropdown {
+  display: none;
+}
 
-li.mobiel {
+.dropdown {
+  display: none;
+}
+
+#nav li:nth-of-type(11), #nav li:nth-of-type(12), #nav li:nth-of-type(13), #nav li:nth-of-type(14) {
   display: none
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 div.header span.logo {
-  /* position: absolute; */
-  width: 100%;
   display: flex;
   justify-content: center;
   background-color: black;
@@ -62,15 +74,16 @@ div.header button {
 }
 
 /* ---------MOBILE--------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 770px) {
   nav {
     position: fixed;
     display: none;
     height: 100%;
     background-color: black;
-    z-index: 1;
+    z-index: 6;
     width: 80%;
     top: 50px;
+    overflow-y: scroll;
   }
 
   nav ul {
@@ -82,32 +95,69 @@ div.header button {
   nav li {
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
-li.mobiel{
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-li.mobiel img {
-  width: 30px;
-}
 
-li.mobiel a {
-  margin-left: 5px;
-  margin-bottom: 0px;
-}
+  #nav li:nth-of-type(11), #nav li:nth-of-type(12), #nav li:nth-of-type(13), #nav li:nth-of-type(14) {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 
-  nav li span {
+  #nav li:nth-of-type(11) img, #nav li:nth-of-type(12) img, #nav li:nth-of-type(13) img, #nav li:nth-of-type(14) img {
+    width: 30px;
+  }
+
+  #nav li:nth-of-type(14) {
+    padding-bottom: 80px;
+  }
+
+  #nav li:nth-of-type(11) a, #nav li:nth-of-type(12) a, #nav li:nth-of-type(13) a, #nav li:nth-of-type(14) a {
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+  nav li span:nth-of-type(1) {
     display: inline-block;
     width: 8px;
     height: 8px;
     border-top: 2px solid #000;
     border-right: 2px solid #000;
+    margin-right: 10px;
     border-color: white;
     transform: rotate(135deg);
+  }
+
+  nav li span:nth-of-type(2) {
+    flex-basis: 100%
+  }
+
+  nav li span:nth-of-type(2) a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: grey;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+  }
+
+  nav li span:nth-of-type(2) a:nth-of-type(1) {
+    padding-top: 15px;
+  }
+
+.dropdown {
+  display: none;
+}
+
+.show {
+    display: none;
+
+    /* flex-direction: column; */
   }
 
   div.header button {
@@ -141,55 +191,54 @@ li.mobiel a {
     margin-left: 10px;
     margin-top: 4px;
   }
+
+  a.icon:nth-of-type(1), a.icon:nth-of-type(2), a.icon:nth-of-type(3) {
+    display: none;
+  }
+
+  div.header {
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    height: 40px;
+    background-color: black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  header>div>span.logo>a>img {
+    /* position: absolute; */
+    height: 40px;
+  }
+
+  header input[type=search] {
+    flex-grow: 1;
+  }
+
+  header form {
+    display: flex;
+    border-style: solid;
+    border-color: #B41C20;
+    border-width: 6px;
+    height: 35px;
+    margin-top: 50px;
+  }
 }
 
 /* ------------------------- */
-
-header>div>span.logo>a>img {
-  /* position: absolute; */
-  height: 40px;
-}
-
-header input[type=search] {
-  flex-grow: 1;
-}
-
-header form {
-  display: flex;
-  border-style: solid;
-  border-color: #B41C20;
-  border-width: 6px;
-  height: 35px;
-  margin-top: 50px;
-}
-
 header form img {
   height: 30px;
 }
 
-div.header {
-  position: fixed;
-  width: 100vw;
-  top: 0px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
-  height: 40px;
-  background-color: black;
-  padding: 5px;
-  /* margin-top: -40px; */
-}
-
 span.icon {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  height: 30px;
   margin-top: 4px;
 }
 
 span.icon a img {
-  width: 30px;
   height: 30px;
   margin-right: 20px;
 }
@@ -198,7 +247,7 @@ span.icon a {
   height: 30px;
 }
 
-/* -------------------Body------------------- */
+/* -------------------Section één------------------- */
 article.banner>p>img {
   width: 15px;
   height: 22px;
@@ -218,7 +267,6 @@ article.banner>p>a {
 }
 
 section.slider div img {
-  /* position: absolute; */
   max-width: 100%;
   height: auto;
 }
@@ -227,7 +275,7 @@ section.slider figure {
   margin: 0;
 }
 
-div.slider {
+.slider figure {
   position: relative;
   display: flex;
   justify-content: center;
@@ -237,7 +285,7 @@ div.slider {
   height: auto;
 }
 
-div.slider article {
+.slider article {
   position: absolute;
   font-size: 23px;
   font-weight: bold;
@@ -247,27 +295,40 @@ div.slider article {
   /* max-width: 200%; */
   height: 130px;
   bottom: 25px;
+  left: 8%;
 }
 
-div.slider a {
+.slider div a {
   color: black;
   font-size: 18px;
   font-weight: normal;
   margin-top: 30px;
 }
 
-div.slider button {
+section.slider div:nth-of-type(1) {
+  display: block;
+}
+
+section.slider div:nth-of-type(2) {
+  display: none;
+}
+
+section.slider div:nth-of-type(3) {
+  display: none;
+}
+
+section.slider button {
   position: absolute;
   top: 45%;
   padding: 10px;
   border: none;
-  font-size: 20px;
+  font-size: 35px;
   font-weight: bold;
   right: 0px;
 }
 
-div.slider button:nth-last-of-type(2) {
-  right: 93%;
+section.slider button:nth-last-of-type(2) {
+  left: 0px;
 }
 
 /* -------------------Section twee------------------- */
@@ -278,6 +339,7 @@ section.twee {
   justify-content: space-between;
   overflow: scroll;
   height: 470px;
+  cursor: grabbing;
 }
 
 section.twee img {
@@ -322,24 +384,24 @@ section.drie span {
 }
 
 section.drie img {
+  /* position: relative; */
   max-width: 100%;
   height: auto;
 }
 
 section.drie button {
   position: absolute;
-  bottom: 30px;
-  right: 100px;
+  bottom: 10%;
+  font-size: 110%;
+  padding: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: rgba(255, 0, 0, 0.0);
   border-color: white;
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
   color: white;
-  padding: 15px;
-  padding-left: 35px;
-  padding-right: 35px;
-  right: 120px;
 }
 
 /* -------------------Section vier------------------- */
@@ -369,6 +431,8 @@ footer {
 }
 
 section.klantenservice article {
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
   /* margin: 10px; */
 }
@@ -382,11 +446,13 @@ section.klantenservice {
 section.klantenservice a img {
   height: 50px;
   margin-bottom: 10px;
+  margin-top: 2em;
   margin-right: 10px;
 }
 
 section.klantenservice button {
   padding: 10px;
+  width: 200px;
   background-color: #E5E5E5;
   border-top: none;
   border-left: none;
@@ -418,13 +484,15 @@ body.bsc section.een {
   height: 600px;
 }
 
-article.video {
+section:nth-of-type(1) article.video {
   position: relative;
+  display: flex;
+  justify-content: center;
   max-width: 100%;
   height: 400px;
 }
 
-body.bsc video {
+body.bsc section.een video {
   position: absolute;
   /* width: 100%; */
   /* height: 100%; */
@@ -432,7 +500,7 @@ body.bsc video {
 
 body.bsc article.video img {
   position: absolute;
-  margin-left: 1em;
+  left: 10%;
   width: 120px;
   padding: 10px;
   background-color: black;
@@ -443,7 +511,7 @@ body.bsc article.video>article {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 200px;
+  top: 0px;
   /* z-index: 1; */
 }
 
@@ -476,7 +544,7 @@ body.bsc article.video>article button {
 }
 
 /* ------------------------SECTION 2------------------------ */
-body.bsc main section:nth-of-type(2) {
+.secoranje {
   position: relative;
   background-image: radial-gradient(#212121 26%, transparent 20%);
   background-color: #f29b05;
@@ -484,7 +552,7 @@ body.bsc main section:nth-of-type(2) {
   max-width: 100%;
 }
 
-body.bsc main section:nth-of-type(2) div {
+.oranje {
   background-image: linear-gradient(to left, #f29b05 25%, transparent 100%);
 }
 
@@ -495,10 +563,11 @@ body.bsc main section:nth-of-type(2) article>article:nth-of-type(1) {
   line-height: 20px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90vw;
+  max-width: 70vw;
   padding: 10px;
   margin-bottom: 100px;
   margin-top: 2em;
+  z-index: 2;
 }
 
 body.bsc main section:nth-of-type(2) h3 {
@@ -507,7 +576,19 @@ body.bsc main section:nth-of-type(2) h3 {
   font-weight: bold;
   padding-left: 1em;
   margin-top: 0px;
+  padding-top: 0px;
   margin-bottom: 5px;
+}
+
+body.bsc main section h3 {
+  position: relative;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0px;
+  padding-top: 50px;
+  margin-bottom: 5px;
+  z-index: 3;
 }
 
 body.bsc main section:nth-of-type(2) h3:nth-of-type(1) {
@@ -516,10 +597,11 @@ body.bsc main section:nth-of-type(2) h3:nth-of-type(1) {
 }
 
 body.bsc main section:nth-of-type(2) article>article:nth-of-type(2) {
-  position: relative;
+  /* position: relative; */
 }
 
 body.bsc main section:nth-of-type(2) img {
+  position: relative;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -530,7 +612,7 @@ body.bsc main section:nth-of-type(2) img {
 
 body.bsc main section:nth-of-type(2) span {
   position: absolute;
-  top: -70px;
+  top: 43%;
   right: 0;
   background-color: black;
   height: 206px;
@@ -541,9 +623,343 @@ body.bsc main section:nth-of-type(2) span {
 p.p {
   position: absolute;
   bottom: 0px;
-  top: 65%;
-  left: 2%;
+  bottom: 5%;
+  left: 5%;
   color: white;
   font-weight: bold;
   font-size: 28px;
+  z-index: 3;
+}
+
+/* ------------------------SECTION 3------------------------ */
+.seczwart {
+  position: relative;
+  background-image: radial-gradient(#f29b05 26%, transparent 20%);
+  background-color: #212121;
+  background-size: 7px 7px;
+  max-width: 100%;
+}
+
+.zwart {
+  background-image: linear-gradient(to right, #212121 25%, transparent 100%);
+}
+
+body.bsc main section:nth-of-type(3) article {
+  position: relative;
+  color: white;
+  padding-left: 1em;
+}
+
+body.bsc main section:nth-of-type(3) article>p {
+  line-height: 25px;
+  width: 300px;
+}
+
+body.bsc main section:nth-of-type(3) span {
+  display: flex;
+  overflow: scroll;
+}
+
+body.bsc main section:nth-of-type(3) li>p {
+  width: 135px;
+}
+
+body.bsc main section:nth-of-type(3) ul {
+  display: flex;
+  overflow: scroll;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-bottom: 50px;
+}
+
+body.bsc main section:nth-of-type(3) li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-left: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+body.bsc main section:nth-of-type(3) article>span {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  top: 15%;
+  right: 24%;
+  z-index: 2;
+  background-color: #f29b05;
+  overflow: hidden;
+}
+
+body.bsc main section:nth-of-type(3) span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body.bsc main section:nth-of-type(3) span>img {
+  /* max-width: 35%; */
+  width: 30%;
+  height: auto;
+  padding: 20px;
+  /* flex-grow: 1; */
+}
+
+body.bsc main section:nth-of-type(3) button {
+  background-color: #f29b05;
+  padding: 15px;
+  width: 80vw;
+  margin-left: 10vw;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 50px;
+}
+
+/* ------------------------SECTION 4------------------------ */
+body.bsc main section:nth-of-type(4) article {
+  position: relative;
+  max-width: 90%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+body.bsc main section:nth-of-type(4) video {
+  /* position: absolute; */
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+
+body.bsc main section:nth-of-type(4) article>h3 {
+  position: absolute;
+  padding: 0px;
+  width: 500px;
+  font-size: 26px;
+  bottom: -15px;
+}
+
+body.bsc main section:nth-of-type(4) span:nth-of-type(1)>img {
+  height: 250px;
+}
+
+body.bsc main section:nth-of-type(4) span:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.bsc main section:nth-of-type(4) span:nth-of-type(2) {
+  display: flex;
+  overflow: scroll;
+  padding-left: 1em;
+}
+
+body.bsc main section:nth-of-type(4) span:nth-of-type(2) img {
+  max-width: 60%;
+  margin-left: 1em;
+  margin-bottom: 80px;
+}
+
+/* ------------------------SECTION 5------------------------ */
+body.bsc main section:nth-of-type(5) img {
+  max-width: 85%;
+  height: auto;
+  align-self: center;
+  margin-top: 7.5%;
+}
+
+body.bsc main section:nth-of-type(5) article:nth-of-type(1) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+body.bsc main section:nth-of-type(5) h3 {
+  position: absolute;
+  font-size: 26px;
+  padding: 0px;
+  bottom: 0%;
+  left: 5%;
+}
+
+body.bsc main section:nth-of-type(5) section>article {
+  background-color: white;
+  padding: 15px;
+  width: 75%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+body.bsc main section:nth-of-type(5) section>article p {
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+body.bsc main section:nth-of-type(5) section>article p:nth-of-type(3) {
+  font-size: 15px;
+}
+
+body.bsc section:nth-of-type(5) div {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 770px) {
+  div.header {
+    position: relative;
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .logo a img {
+    max-width: 50%;
+  }
+
+  .logo {
+    margin-left: 5%
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  nav a {
+    padding: 10px;
+    padding-left: 10px;
+    /* padding-bottom: 50px; */
+    flex-grow: 1;
+    white-space: nowrap;
+
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .informatie {
+    display: flex;
+    justify-content: flex-end;
+    /* height: 50px; */
+  }
+
+  .informatie figure {
+    display: flex;
+    color: white;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .informatie figure img {
+    display: block;
+    height: 12px;
+  }
+
+  span.icon {
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+    margin-right: 5%;
+  }
+
+  form {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+  }
+
+  form input[type=search] {
+    width: 100%;
+    /* height: 30px; */
+    padding: 10px;
+  }
+
+  .slider article {
+    width: 350px;
+    height: 130px;
+  }
+
+  .drie button {
+    left: 31%;
+    /* width: 200px; */
+    padding: 0px;
+  }
+
+  /* -------------------BSC------------------- */
+  body.bsc main section:nth-of-type(2) h3 {
+    font-size: 50px;
+  }
+
+  body.bsc section:nth-of-type(1) article.video article p:nth-of-type(1) {
+    font-size: 100px;
+  }
+
+  body.bsc section:nth-of-type(1) article.video article p:nth-of-type(2) {
+    font-size: 19px;
+  }
+
+  body.bsc article.video article {
+    /* margin-left: 25%; */
+    padding-bottom: 25%;
+    top: 0px;
+  }
+
+  body.bsc main article.video>article button {
+    width: 500px;
+  }
+
+body.bsc section:nth-of-type(3) div span {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+  body.bsc section:nth-of-type(3) div span>img{
+    width: 200px;
+    height: 100px;
+    /* padding: 0px; */
+
+  }
+  body.bsc section:nth-of-type(3) div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.bsc section:nth-of-type(3) div button {
+    align-self:flex-start ;
+    width: 300px;
+  }
+
+  body.bsc section:nth-of-type(4) article {
+    display: flex;
+    justify-content: center;
+  }
+
+  body.bsc main section:nth-of-type(4) div span:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  body.bsc section:nth-of-type(4) video {
+    max-width: 50%;
+  }
+
+  body.bsc section:nth-of-type(5) div h3 {
+    left: 370px;
+  }
 }
