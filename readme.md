@@ -14,8 +14,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 Het plan was om de kerstvakantie en de week na de kertvakantie te besteden aan het zoeken van een stageplek en alle vakken naast frontend afmaken, zodat ik de laatste week aan frontend kon besteden. Dit ging echter niet helemaal zoals gepland, waardoor ik uiteindelijk veel tijd tekort had.
 Ik heb in de laatste week de eerste pagina responsive gemaakt, dit ging grotendeels goed. De tweede pagina is niet gemaakt zoals de officiële op desktop formaat, omdat ik niet genoeg tijd had om dit hetzelfde af te maken. Ik heb wel een javascript slider kunnen maken op de eerste pagina. Ook de footer is niet helemaal afgewerkt qua html i.v.m. tijdtekort.<br/>
-Problemen:
-\-Iets waar ik uren aan heb besteed en nog steeds niet heb kunnen laten werken zijn de dropdowns in het hamburger menu. De eerste dropdown werkt, na classes en id's toe te voegen, maar aangezien ik vaak hoor dat je dit niet te veel moet doen leek het mij geen goed idee om dit voor nog 11 dropdowns te doen.
+Problemen:<br/>
+\-Iets waar ik uren aan heb besteed en nog steeds niet heb kunnen laten werken zijn de dropdowns in het hamburger menu. De eerste dropdown werkt, na classes en id's toe te voegen, maar aangezien ik vaak hoor dat je dit niet te veel moet doen leek het mij geen goed idee om dit voor nog 11 dropdowns te doen.<br/>
 \-Na meerdere pogingen kan ik nog steeds niet vinden hoe ik mijn tekst laat scalen.
 
 Ik ben wel tevreden met hoeveel ik heb geleerd over frontend tijdens dit vak en ik ben heel blij met de dingen die wél zijn gelukt, zoals het hamburger menu, de slider en eindelijk leren hoe je iets positioneert zonder dat alles kapot gaat op het moment dat je de viewwidth verandert.
@@ -29,11 +29,11 @@ Ik ben wel tevreden met hoeveel ik heb geleerd over frontend tijdens dit vak en 
 
 ### Stand van zaken
 
-Goed:
+Goed:<br/>
 -Ik heb het hamburger menu in de website kunnen zetten. De dropdowns in het hamburger menu werken voor nu nog niet.
 
-Minder goed:
--Meerdere manieren geproberd om de tekst in de website te laten scalen, maar het lukt nog steeds niet.
+Minder goed:<br/>
+-Meerdere manieren geproberd om de tekst in de website te laten scalen, maar het lukt nog steeds niet.<br/>
 -Geprobeerd de video src aan te passen op andere formaten, maar dit is niet gelukt. De meeste oplossingen zijn met javascript, die ik niet begrijp en ik heb op dit moment niet de tijd om het uit te zoeken.
 
 | Samantha(ik)                                    | Noa                                                 | Nicole                              | Maylinn    | Stein      |
@@ -46,10 +46,10 @@ Minder goed:
 
 ### Stand van zaken
 
-Goed:
+Goed:<br/>
 -Van het voortgangsgesprek heb ik geleerd waarom ik zo veel moeite had met de video scalen. Er worden op de officiële website namelijk 2 verschillende video's gebruikt met andere formaten.
 
-Minder goed:
+Minder goed:<br/>
 -Ik heb vooral gewerkt aan de andere vakken, dus ik heb geen tijd gehad om aan de website te werken.
 
 
@@ -62,20 +62,18 @@ Minder goed:
 
 ### Stand van zaken
 
-Goed:
--Plaatjes in de pagina gezet en met css sliders maken.
--Na assessment: Idee gekregen voor een gradient achtergrond met stipjes
+Goed:<br/>
+-Plaatjes in de pagina gezet en met css sliders maken.<br/>
+-Na assessment: Idee gekregen voor een gradient achtergrond met stipjes<br/>
 -Na assessment: Na een width op het menu te zetten werkt de position: fixed en ziet het er niet meer bugged uit.
 
-Minder goed:
--Elementen positioneren op een responsive manier.
--Het menu fixed/sticky maken.
+Minder goed:<br/>
+-Elementen positioneren op een responsive manier.<br/>
+-Het menu fixed/sticky maken.<br/>
 -Video laten scalen.
 
 
 ### Agenda voor meeting
-
-Width op de header zetten, polkadot achtergrond met gradient eroverheen testen.
 
 | Samantha                                                                           | Noa                               | Nicole                                     | Maylinn                                           | Stein                             |
 | ---------------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------ | ------------------------------------------------- | --------------------------------- |
