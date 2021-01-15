@@ -5,8 +5,7 @@
 /*eslint 'no-console': 0*/
 
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+/* Dropdown in hamburger menu, toggle when clicked */
 function myFunction() {
   console.log("im working");
   var myDropdown = document.getElementById("dropdown");
