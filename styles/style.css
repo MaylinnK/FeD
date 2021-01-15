@@ -736,7 +736,6 @@ body.bsc main section:nth-of-type(4) video {
 body.bsc main section:nth-of-type(4) article>h3 {
   position: absolute;
   padding: 0px;
-  width: 500px;
   font-size: 26px;
   bottom: -15px;
 }
@@ -806,6 +805,8 @@ body.bsc section:nth-of-type(5) div {
   padding-bottom: 50px;
 }
 
+
+/* ------------------DESKTOP------------------ */
 @media screen and (min-width: 770px) {
 
   #dropdown {

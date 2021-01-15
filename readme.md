@@ -29,7 +29,12 @@ Ik ben wel tevreden met hoeveel ik heb geleerd over frontend tijdens dit vak en 
 
 ### Stand van zaken
 
-Goed, ik heb het hamburger menu in de website kunnen zetten.
+Goed:
+-Ik heb het hamburger menu in de website kunnen zetten. De dropdowns in het hamburger menu werken voor nu nog niet.
+
+Minder goed:
+-Meerdere manieren geproberd om de tekst in de website te laten scalen, maar het lukt nog steeds niet.
+-Geprobeerd de video src aan te passen op andere formaten, maar dit is niet gelukt. De meeste oplossingen zijn met javascript, die ik niet begrijp en ik heb op dit moment niet de tijd om het uit te zoeken.
 
 | Samantha(ik)                                    | Noa                                                 | Nicole                              | Maylinn    | Stein      |
 | ----------------------------------------------- | --------------------------------------------------- | ----------------------------------- | ---------- | ---------- |
@@ -41,7 +46,12 @@ Goed, ik heb het hamburger menu in de website kunnen zetten.
 
 ### Stand van zaken
 
-Minder goed, ik heb geen tijd gehad om aan de website te werken.
+Goed:
+-Van het voortgangsgesprek heb ik geleerd waarom ik zo veel moeite had met de video scalen. Er worden op de officiële website namelijk 2 verschillende video's gebruikt met andere formaten.
+
+Minder goed:
+-Ik heb vooral gewerkt aan de andere vakken, dus ik heb geen tijd gehad om aan de website te werken.
+
 
 | Samantha                                                    | Noa                                            | Nicole           | Maylinn                                                   | Stein      |
 | ----------------------------------------------------------- | ---------------------------------------------- | ---------------- | --------------------------------------------------------- | ---------- |
@@ -53,15 +63,19 @@ Minder goed, ik heb geen tijd gehad om aan de website te werken.
 ### Stand van zaken
 
 Goed:
-Plaatjes in de pagina zetten en met css sliders maken.
+-Plaatjes in de pagina gezet en met css sliders maken.
+-Na assessment: Idee gekregen voor een gradient achtergrond met stipjes
+-Na assessment: Na een width op het menu te zetten werkt de position: fixed en ziet het er niet meer bugged uit.
 
 Minder goed:
-Elementen positioneren op een responsive manier.
-Het menu fixed/sticky maken.
+-Elementen positioneren op een responsive manier.
+-Het menu fixed/sticky maken.
+-Video laten scalen.
+
 
 ### Agenda voor meeting
 
-\-samen met je groepje opstellen-
+Width op de header zetten, polkadot achtergrond met gradient eroverheen testen.
 
 | Samantha                                                                           | Noa                               | Nicole                                     | Maylinn                                           | Stein                             |
 | ---------------------------------------------------------------------------------- | --------------------------------- | ------------------------------------------ | ------------------------------------------------- | --------------------------------- |
@@ -69,9 +83,6 @@ Het menu fixed/sticky maken.
 | In hoeverre is dit de surface plane/wat moet er bij?                               | ---                               | Hoe krijg ik ruimte onder mijn button?     | Hoe krijg ik mijn header fixed?                   | ---                               |
 | ---                                                                                | ---                               | ---                                        | Hoe krijg ik sommige dingen responsive            | ---                               |
 
-### Verslag van meeting
-
-Width op de header zetten, polkadot achtergrond met gradient eroverheen testen.
 
 ## Breakdownschets (week 1)
 
@@ -82,8 +93,6 @@ Width op de header zetten, polkadot achtergrond met gradient eroverheen testen.
 <img src="images/Breakdownsketchv2.PNG" width="375px" alt="Breakdownschets">
 
 ## Intake (week 1)
-
-\-uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
 **Je startniveau:** Rood
 

@@ -4,10 +4,6 @@
 
 /*eslint 'no-console': 0*/
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-
-
-
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -27,7 +23,7 @@ var nav = document.getElementById("nav");
 var dropbtn = document.getElementsByClassName("dropbtn");
 console.log(dropbtn);
 
-
+/* Toggle hamburger menu when clicked */
 function hamburger() {
   console.log("Im working");
   if (nav.style.display == "block") {
@@ -47,7 +43,7 @@ var a = document.getElementById('slidea');
 var b = document.getElementById('slideb');
 var c = document.getElementById('slidec');
 
-
+/* Number goes up when clicking next button */
 function next() {
   if (number < sliderArray.length - 1) {
     number += 1;
@@ -57,6 +53,7 @@ function next() {
 }
 document.getElementById('next').addEventListener("click", next);
 
+/* Number goes down when clicking previous button */
 function previous() {
   if (number == 0) {
     number = 2;
@@ -66,6 +63,7 @@ function previous() {
 }
 document.getElementById('previous').addEventListener("click", previous);
 
+/* Depending on the number, an image is displayed */
 function slideShow() {
   if (number == 0) {
     a.style.display = 'block';
