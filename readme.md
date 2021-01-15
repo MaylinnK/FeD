@@ -13,7 +13,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Eindgesprek (week 7/8)
 
 Het plan was om de kerstvakantie en de week na de kertvakantie te besteden aan het zoeken van een stageplek en alle vakken naast frontend afmaken, zodat ik de laatste week aan frontend kon besteden. Dit ging echter niet helemaal zoals gepland, waardoor ik uiteindelijk veel tijd tekort had.
-Ik heb in de laatste week de eerste pagina responsive gemaakt, dit ging grotendeels goed. De tweede pagina is niet gemaakt zoals de officiële op desktop formaat, omdat ik niet genoeg tijd had om dit hetzelfde af te maken. Ik heb wel een javascript slider kunnen maken op de eerste pagina. Ook de footer is niet helemaal afgewerkt qua html i.v.m. tijdtekort.
+Ik heb in de laatste week de eerste pagina responsive gemaakt, dit ging grotendeels goed. De tweede pagina is niet gemaakt zoals de officiële op desktop formaat, omdat ik niet genoeg tijd had om dit hetzelfde af te maken. Ik heb wel een javascript slider kunnen maken op de eerste pagina. Ook de footer is niet helemaal afgewerkt qua html i.v.m. tijdtekort.<br/>
 Problemen:
 \-Iets waar ik uren aan heb besteed en nog steeds niet heb kunnen laten werken zijn de dropdowns in het hamburger menu. De eerste dropdown werkt, na classes en id's toe te voegen, maar aangezien ik vaak hoor dat je dit niet te veel moet doen leek het mij geen goed idee om dit voor nog 11 dropdowns te doen.
 \-Na meerdere pogingen kan ik nog steeds niet vinden hoe ik mijn tekst laat scalen.
