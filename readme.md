@@ -7,7 +7,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 1.  <https://www.w3schools.com/>
 2.  <https://stackoverflow.com/>
-3.  \-...-
+3.  <https://css-tricks.com/>
 
 ## Eindgesprek (week 7/8)
 
