@@ -2,8 +2,7 @@
 
 **Auteur:** Maylinn Kwakman
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
+Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 ## Bronnenlijst
 
 1.  <https://www.w3schools.com/>
@@ -12,7 +11,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
-Het plan was om de kerstvakantie en de week na de kertvakantie te besteden aan het zoeken van een stageplek en alle vakken naast frontend afmaken, zodat ik de laatste week aan frontend kon besteden. Dit ging echter niet helemaal zoals gepland, waardoor ik uiteindelijk veel tijd tekort had.
+Het plan was om de kerstvakantie en de week na de kertvakantie te besteden aan het zoeken van een stageplek en alle vakken naast frontend afmaken, zodat ik de laatste week aan frontend kon besteden. Dit ging echter niet helemaal zoals gepland, waardoor ik uiteindelijk veel tijd tekort had.<br/>
 Ik heb in de laatste week de eerste pagina responsive gemaakt, dit ging grotendeels goed. De tweede pagina is niet gemaakt zoals de officiële op desktop formaat, omdat ik niet genoeg tijd had om dit hetzelfde af te maken. Ik heb wel een javascript slider kunnen maken op de eerste pagina. Ook de footer is niet helemaal afgewerkt qua html i.v.m. tijdtekort.<br/>
 Problemen:<br/>
 \-Iets waar ik uren aan heb besteed en nog steeds niet heb kunnen laten werken zijn de dropdowns in het hamburger menu. De eerste dropdown werkt, na classes en id's toe te voegen, maar aangezien ik vaak hoor dat je dit niet te veel moet doen leek het mij geen goed idee om dit voor nog 11 dropdowns te doen.<br/>
@@ -98,10 +97,10 @@ Minder goed:<br/>
 
 **Je opdracht:** <https://www.large.nl/>
 
-**Screenshot(s) van de eerste pagina (small screen):**
+**Screenshot(s) van de eerste pagina (desktop screen):**
 
 <img src="images/Home.png" width="375px" alt="Homepage">
 
-**Screenshot(s) van de tweede pagina (small screen):**
+**Screenshot(s) van de tweede pagina (desktop screen):**
 
 <img src="images/Backstage.png" width="375px" alt="Backstage page">
